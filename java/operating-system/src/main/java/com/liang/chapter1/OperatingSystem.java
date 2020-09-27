@@ -71,7 +71,7 @@ public class OperatingSystem {
          * 这个二进制文件将作为一个1.5M的虚拟软盘用于当作虚拟机的启动软盘
          */
         try {
-            DataOutputStream out = new DataOutputStream(new FileOutputStream("system_c1.img"));
+            DataOutputStream out = new DataOutputStream(new FileOutputStream("img/system_c1.img"));
             for (Integer integer : imgByteToWrite) {
                 out.writeByte(integer.byteValue());
             }
